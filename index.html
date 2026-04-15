@@ -46,29 +46,6 @@
             display: block;
         }
         
-        /* Decorative background elements */
-        .page::before {
-            content: '';
-            position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 150px;
-            height: 150px;
-            background: radial-gradient(circle, rgba(102,126,234,0.1) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-        
-        .page::after {
-            content: '';
-            position: absolute;
-            bottom: -30px;
-            left: -30px;
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle, rgba(118,75,162,0.1) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-        
         .page h2 {
             color: #667eea;
             margin-bottom: 15px;
@@ -94,23 +71,15 @@
             border-radius: 15px;
             margin: 20px 0;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(102,126,234,0.3);
         }
         
-        .keyword-box h4 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        
-        .keyword-box p {
-            color: #fff;
-            font-size: 15px;
-        }
-        
-        .emoji-decoration {
-            font-size: 60px;
-            text-align: center;
-            margin: 10px 0;
+        .page-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
         .emoji-list {
@@ -121,13 +90,6 @@
         .emoji-list li {
             margin: 12px 0;
             font-size: 18px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .emoji-list li::before {
-            content: '👉';
-            margin-right: 10px;
         }
         
         .qa-box {
@@ -156,6 +118,7 @@
         
         .activity-list li {
             margin: 8px 0;
+            list-style: none;
         }
         
         .activity-list li::before {
@@ -208,74 +171,21 @@
             border-radius: 20px;
         }
         
-        /* Cover page styles */
+        /* Cover page */
         .cover-page {
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
         
         .cover-title {
-            font-size: 48px;
+            font-size: 42px;
             color: #667eea;
             margin-bottom: 10px;
         }
         
         .cover-subtitle {
             color: #888;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .cover-emoji {
-            font-size: 120px;
-            margin: 20px 0;
-            animation: bounce 2s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .cover-tagline {
-            color: #888;
             font-size: 18px;
-            margin-top: 20px;
-        }
-        
-        .cover-bottom-emoji {
-            position: absolute;
-            bottom: 20px;
-            right: 30px;
-            font-size: 40px;
-            opacity: 0.5;
-        }
-        
-        /* Image placeholder boxes */
-        .image-placeholder {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%);
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 15px 0;
-            border: 2px dashed #667eea;
-        }
-        
-        .image-placeholder span {
-            font-size: 50px;
-        }
-        
-        .image-placeholder p {
-            color: #888;
-            font-size: 14px;
-            margin-top: 10px;
+            margin-bottom: 20px;
         }
         
         /* News items */
@@ -300,28 +210,20 @@
         <div class="page active" id="page1">
             <h2 class="cover-title">🤖 AI 親子週刊</h2>
             <p class="cover-subtitle">第 1 期 - 2026年4月14日</p>
-            <div class="cover-emoji">🦾</div>
-            <div class="emoji-decoration">🤖✨🚀</div>
-            <h3 style="text-align: center; margin-top: 20px;">本期主題：AI 到底是什麼？</h3>
-            <p class="cover-tagline">讓小朋友同爸媽一齊認識未來！</p>
-            <div class="cover-bottom-emoji">📚</div>
+            <img src="images/cover.jpg" alt="可愛機械人" class="page-image">
+            <h3 style="text-align: center;">本期主題：AI 到底是什麼？</h3>
+            <p style="text-align: center; color: #888; margin-top: 15px;">讓小朋友同爸媽一齊認識未來！</p>
         </div>
         
         <!-- Page 2: What is AI -->
         <div class="page" id="page2">
             <h2>💡 什麼是 AI？</h2>
             
-            <div class="image-placeholder">
-                <span>🧠💻</span>
-                <p>（AI 示意圖）</p>
-            </div>
-            
             <div class="keyword-box">
                 <h4>📚 本期關鍵詞：AI（人工智能）</h4>
                 <p>AI = Artificial Intelligence</p>
                 <p style="margin-top:10px;font-size:18px;">🤖 好似一個好叻既「電子徒弟」🤖</p>
-                <p>佢會學你既嘢，慢慢越來越聰明！</p>
-                <p style="margin-top:10px;"><strong>點記住？</strong> A.I. = 「愛」— 即係「有愛既電腦」🦾💕</p>
+                <p><strong>點記住？</strong> A.I. = 「愛」— 即係「有愛既電腦」🦾💕</p>
             </div>
             
             <h3>AI 就是「會思考的電腦」！</h3>
@@ -336,15 +238,11 @@
             
             <h3>咁 AI 點解咁叻？</h3>
             <p>因為佢睇過好多好多既數據，等於你睇咗幾千本書咁上下！佢從嘅 learnings 之中，慢慢學識做唔同既 task。</p>
-            
-            <div class="emoji-decoration">📚📚📚</div>
         </div>
         
         <!-- Page 3: AGI -->
         <div class="page" id="page3">
             <h2>🎮 AI 大件事！</h2>
-            
-            <div class="emoji-decoration" style="font-size:40px;">🚀🌟💫</div>
             
             <h3>NVIDIA 老闆話：我哋已經整咗 AGI！</h3>
             
@@ -356,11 +254,6 @@
             <h3>簡單啲講：</h3>
             <p>以前既 AI 淨係識一樣嘢（如：下棋），但係 AGI 可以好似你咁，乜都學到啵！</p>
             
-            <div class="image-placeholder">
-                <span>♟️🎨🎵</span>
-                <p>（AGI 可以做好多唔同既事）</p>
-            </div>
-            
             <div class="qa-box">
                 <h3>🤔 你問我答</h3>
                 <p><strong>Q: AI 會取代人類工作嗎？</strong></p>
@@ -371,6 +264,8 @@
         <!-- Page 4: Parent Section -->
         <div class="page" id="page4">
             <h2>👨‍👩‍👧‍👦 家長專區</h2>
+            
+            <img src="images/family.jpg" alt="家庭一起看AI" class="page-image">
             
             <div class="parent-section">
                 <h3>📚 本期 AI 新聞速讀</h3>
@@ -405,8 +300,6 @@
                 <li>睇下 Netflix 點樣推薦電影</li>
                 <li>試下用 AI 繪圖工具（例如：Microsoft Designer）</li>
             </ul>
-            
-            <div class="emoji-decoration">👨‍👩‍👧‍👦❤️🤖</div>
         </div>
         
         <div class="navigation">
