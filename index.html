@@ -40,7 +40,7 @@
             display: none;
             position: relative;
             overflow: hidden;
-            min-height: 600px;
+            min-height: 700px;
         }
         
         .page.active {
@@ -116,11 +116,26 @@
         
         .page-image {
             width: 100%;
-            max-height: 280px;
+            max-height: 250px;
             object-fit: cover;
             border-radius: 20px;
-            margin: 20px 0;
+            margin: 15px 0;
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        
+        .image-grid img {
+            width: 100%;
+            max-height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
         }
         
         .emoji-list {
@@ -285,6 +300,11 @@
             <div class="cover-emoji">🦾✨</div>
             <h3 style="text-align: center; color: #667eea;">本期主題：人工智慧究竟是什麼？</h3>
             <p style="text-align: center; color: #888; margin-top: 18px; font-size: 19px;">讓小朋友與家長一起認識未來科技！</p>
+            
+            <div class="image-grid">
+                <img src="images/ai-robot-friend.jpg" alt="AI 機械人朋友">
+                <img src="images/family.jpg" alt="家庭一起學習">
+            </div>
         </div>
         
         <!-- Page 2: What is AI -->
@@ -303,12 +323,19 @@
             <h3>人工智慧就是「會思考的電腦」！</h3>
             <p>您喜愛的 Siri、Google 搜尋，或是 Netflix 推薦的卡通節目……其實它們都是人工智慧的應用！</p>
             
+            <div class="image-grid">
+                <img src="images/ai-brain.jpg" alt="AI 大腦">
+                <img src="images/ai-teacher.jpg" alt="AI 老師">
+            </div>
+            
             <h3>它們能夠做到：</h3>
             <ul class="emoji-list">
                 <li>🗣 理解您的說話</li>
                 <li>📺 推薦您可能喜歡的內容</li>
                 <li>🎮 與您一起玩遊戲</li>
             </ul>
+            
+            <img src="images/kids-robots.jpg" alt="小朋友與機械人" class="page-image">
             
             <h3>為什麼人工智慧這麼聰明呢？</h3>
             <p>因為它閱讀過大量的數據，就像是您讀了幾千本書一樣！它從這些學習經驗中，漸漸學會執行各種不同的任務。</p>
@@ -321,6 +348,11 @@
             <img src="images/nvidia-fun.jpg" alt="NVIDIA 機械人" class="page-image">
             
             <h3>NVIDIA 執行長宣布：我們已實現通用人工智慧！</h3>
+            
+            <div class="image-grid">
+                <img src="images/nvidia-logo.jpg" alt="NVIDIA Logo">
+                <img src="images/nvidia-chip.jpg" alt="NVIDIA 芯片">
+            </div>
             
             <div class="keyword-box">
                 <h4>🚀 AGI = Artificial General Intelligence</h4>
@@ -364,6 +396,11 @@
                 </div>
             </div>
             
+            <div class="image-grid">
+                <img src="images/kids-robots.jpg" alt="小朋友與機械人">
+                <img src="images/ai-teacher.jpg" alt="AI 老師">
+            </div>
+            
             <h3>🎯 家長可以如何向小朋友解釋人工智慧？</h3>
             <p><strong>簡單比喻：</strong></p>
             <ul class="emoji-list">
@@ -371,6 +408,8 @@
                 <li>機器學習 = 「見多識廣」</li>
                 <li>通用人工智慧 = 「真正像人類的機器人」</li>
             </ul>
+            
+            <img src="images/ai-brain.jpg" alt="AI 大腦" class="page-image">
             
             <h3>🎮 親子活動建議：</h3>
             <ul class="activity-list">
